@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT WEBSITE</title>
+</head>
+<body>
+    <header>     
+            <div class="header">
+                <div class="headerbar">
+                    <div class="account">
+                        <ul>
+                            <a href="#" onclick="homepage()"><li><i class="fa-solid fa-house"></i></li></a>
+                            <a href="#"><li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i></li></a>
+                            <div class="search" id="searchinput1">
+                                <input type="search">
+                                <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                            </div>
+                            <a href="#" onclick="profile()"><li><i class="fa-solid fa-user" id="user-mb"></i></li></a>
+                        </ul>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <a href="#home" onclick="home()"><li>Home</li></a>
+                            <a href="#aboutus" onclick="aboutus()"><li>About Us</li></a>
+                            <a href="#foodmenu" onclick="foodmenu()"><li>Food Menu</li></a>
+                            <a href="#booktable" onclick="booktable()"><li>Book Table</li></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <p style="color: rgb(115, 72, 20);">Crust & Cravings</p>
+                </div>
+                <div class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark" id="hd_cross"></i>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <a href="#home" onclick="home()"><li>Home</li></a>
+                        <a href="#aboutus" onclick="aboutus()"><li>About Us</li></a>
+                        <a href="#foodmenu" onclick="foodmenu()"><li>Food Menu</li></a>
+                        <a href="#booktable" onclick="booktable()"><li>Book Table</li></a>
+                    </ul>
+                </div>
+                <div class="account">
+                    <ul>
+                        <a href="#" onclick="homepage()"><li><i class="fa-solid fa-house" id="homepage"></i></li></a>
+                        <a href="#"><li><i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i></li></a>
+                        <div class="search" id="searchinput2">
+                            <input type="search">
+                            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                        </div>
+                        <a href="#" onclick="profile()"><li><i class="fa-solid fa-user" id="user-lap"></i></li></a>
+                    </ul>
+                </div>
+            </div>
+            <div id="home">
+                <div class="home">
+                    <div class="main_slide">
+                        <div class="caption">
+                            <h1>Savour the<span style="color: rgb(115, 72, 20);font-size: 65px;"> Moments,</span> Taste the <span style="color: rgb(115, 72, 20);font-size: 65px;">Perfection</span></h1><br>
+                            <p style="font-family: dancingscript;">"Every dish tells a story,let your taste buds narrate the adventure"</p>
+                            <button class="visit_btn" onclick="booktable()">Visit now</button>
+                        </div>
+                        <div class="caption_imgs">
+                            <div class="row1">
+                                <img src="Images/homeimg1.avif" alt="" class="caption_img1">
+                                <p class="quote1">"Good Food, Good Mood"</p>
+                            </div>
+                            <div class="row2">
+                                <p class="quote2">"Taste the love in every bite"</p>
+                                <img src="Images/homeimg2.avif" class="caption_img2">
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="items_bar">
+                <div class="food_items">
+                    <div class="item">
+                        <img src="Images/item1.jpg" class="item_img">
+                        <p>Pizza</p>
+                        <button class="menu_btn" onclick="foodmenu()">See Menu</button>
+                    </div>
+                    <div class="item">
+                        <img src="Images/item2.avif" class="item_img">
+                        <p>Burger</p>
+                        <button class="menu_btn" onclick="foodmenu()">See Menu</button>
+                    </div>
+                    <div class="item">
+                        <img src="Images/item3.avif" class="item_img">
+                        <p>French fries</p>
+                        <button class="menu_btn" onclick="foodmenu()">See Menu</button>
+                    </div>
+                </div>
+                </div>
+                <div class="people_choose_slide">
+                    <img src="Images/item4.webp" style="height: 450px ;width: 450px;border-radius: 50px;">
+                    <div class="reasons">
+                        <h2 style="font-size: 40px;text-align: center;color: rgb(115, 72, 20);">Why people choose us?</h2>
+                        <div class="points">
+                            <img src="Images/point1.webp" class="points_images">
+                            <p style="font-size: 15px;"><span style="font-size: 25px;font-weight: bold;color: rgb(115, 72, 20);">Culinary Excellence</span><br> Our talented chefs meticulously craft each dish, transforming the freshest, locally sourced ingredients into culinary masterpieces. Experience a symphony of flavors that will delight your taste buds and leave you craving more.</p>
+                        </div>
+                        <div class="points">
+                            <img src="Images/point2.jpg" class="points_images">
+                            <p style="font-size: 15px;"><span style="font-size: 25px;font-weight: bold;color: rgb(115, 72, 20);">Warm and inviting atmosphere</span><br>Step into a cozy, candlelit haven that's perfect for intimate dinners or family gatherings. Our restaurant's unique ambiance sets the stage for unforgettable moments, making every visit a cherished memory.</p>
+                        </div>
+                        <div class="points">
+                            <img src="Images/point3.webp" class="points_images">
+                            <p style="font-size: 15px;"><span style="font-size: 25px;font-weight: bold;color: rgb(115, 72, 20);">Passion for food</span><br>Our chefs are driven by an unwavering passion for food. They pour their hearts into every dish, ensuring that your dining experience is filled with love, creativity, and dedication to culinary artistry.</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 style="text-align: center;margin: 150px;color: rgb(115, 72, 20);font-size: 40px;">Our Popular Food Items</h1>
+                <div class="popular_food_items">
+                    <div class="popular_foods">
+                        <div class="foods">
+                            <img src="Images/fooditem1.jpg" style="height: 150px;width: 170px;border-radius: 50%;">
+                            <h3 style="background-color: white;color: black;">Gobi Manchuria</h3>
+                            <h3 style="background-color: white;color: black;">100 Rs</h3>    
+                        </div>
+                        <div class="foods">
+                            <img src="Images/fooditem2.jpg" style="height: 150px;width: 170px;border-radius: 50%;">
+                            <h3 style="background-color: white;color: black;">Noodles</h3>
+                            <h3 style="background-color: white;color: black;">120 Rs</h3>    
+                        </div>
+                        <div class="foods">
+                            <img src="Images/fooditem3.avif" style="height: 150px;width: 170px;border-radius: 50%;">
+                            <h3 style="background-color: white;color: black;">Momos</h3>
+                            <h3 style="background-color: white;color: black;">180 Rs</h3>    
+                        </div>
+                        <div class="foods">
+                            <img src="Images/fooditem4.jpg" style="height: 150px;width: 170px;border-radius: 50%;">
+                            <h3 style="background-color: white;color: black;">Burger</h3>
+                            <h3 style="background-color: white;color: black;">130 Rs</h3>    
+                        </div>
+                        
+                    </div>
+                </div>
+                <h2 style="margin-top: 180px;color: rgb(115, 72, 20);font-size: 40px;text-align: center;">Customer Feedback</h2>
+                <p style="font-size: 20px;padding:20px 150px;text-align: center;">"Customer feedback on our restaurant website provides invaluable insights from diners, helping us enhance the dining experience and continually improve our service, ensuring both customer satisfaction and our restaurant's growth."</p>
+                <div class="customer_feedback">
+                    <div class="feedback">
+                        <!-- <h2>Customer Feedback</h2> -->
+                        <label for="firstname">First Name :</label><br><br>
+                        <input type="text" id="firstname"><br><br>
+                        <label for="lastname">Last Name :</label><br><br>
+                        <input type="text" id="lastname"><br><br>
+                        <label for="email">Email :</label><br><br>
+                        <input type="email" id="email"><br><br>
+                        <label for="message">Message :</label><br><br>
+                        <textarea rows="5" cols="50"></textarea><br><br>
+                        <button>Send Message</button>
+                    </div>
+                    <img src="Images/chef1.png" style="height: 450px;width:300px;">
+                </div>
+                <div class="footer">
+                    <div class="footer_info">
+                        <h2>Crust & Cravings</h2><br>
+                        <p>Email :crustcravings@gmail.com</p>
+                        <p>Youtube :Crust and Cravings</p>
+                        <p>Dilshukhnagar, Hyderabad</p>
+                        <p>Telangana</p>
+
+                    </div>
+                    <div class="footer_social_media">
+                        <h2>Follow Us On
+
+                        </h2>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        <div id="aboutus">
+            <div class="about_slide">
+                <div class="aboutus">
+                    <img src="Images/about1.jpg">
+                    <div class="about">
+                        <h1 style="font-size: 50px;text-align: center;color:  rgb(115, 72, 20);">About Us</h1><br><br>
+
+                        <p><span style="font-size: 50px;">W</span>elcome to <span style="font-size: 50px;color: rgb(115, 72, 20);font-weight:bolder;font-family: dancingscript;">Crust & Cravings</span>, a culinary heaven wherethe artistry of crust meets the irresistable allure of cravings.Our story began as a flavourful journey unfolding in the heart of Hyderabad.At Crust & Cravings,we redefine the dining experience with a fusion of inventive crusts and mouth watering creations.</p><br>
+                        <p>Nestled in the vibrant streets of Hyderabad.Our restaurant's ambiance radiates a cozy yet contemporary vibe, creating the perfect backdrop for your dining pleasure.</p><br>
+                        <p>Immerse yourself in our culinary world, where crust becomes an art form, and cravings are not just met but exceeded. Crust & Cravings invites you to savour the moments, one flavourful bite at a time. Join us in this delicious journey, where every slice tells a story and every craving finds its fulfillment.</p>
+                    </div>
+                    <img src="Images/about2.avif">
+                </div>
+            </div>
+        </div>
+        <div id="foodmenu">
+            <div class="foodmenu_slide">
+                <div class="foodmenu">
+                    <h1 style="font-size: 50px;text-align: center;color:  rgb(115, 72, 20);">Our Menu</h1><br>
+                    <h3 style="color: white;font-size: 20px;text-align: center;font-family:Verdana, Geneva, Tahoma, sans-serif;">Choose your favourite dish</h3><br><br>
+                    <div class="menucard">
+                        <div class="itemcard">
+                            <img src="Images/foodmenu1.jpg" style="height: 200px;width: 220px;">                        
+                            <div class="nameprice">
+                                <p>Gobi Manchuria</p>
+                                <p>120 Rs</p>
+                            </div>
+                        </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu2.webp" style="height: 200px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Pasta</p>
+                                    <p>140 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu3.jpg" style="height: 250px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Macaroni</p>
+                                    <p>100 Rs</p>
+                                </div>
+                            </div>    
+                            <div class="itemcard">
+                                <img src="Images/foodmenu4.webp" style="height: 200px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Noodles</p>
+                                    <p>130 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu5.jpg" style="height: 250px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Veg pizza</p>
+                                    <p>150 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu6.jpg" style="height: 250px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Veg burger</p>
+                                    <p>140 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu7.jpg" style="height: 200px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Panupuri</p>
+                                    <p>30 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu8.webp" style="height: 200px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>French fries</p>
+                                    <p>100 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu9.webp" style="height: 250px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Sandwich</p>
+                                    <p>120 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu10.jpg" style="height: 200px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Chicken popcorn</p>
+                                    <p>150 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu11.jpg" style="height: 200px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Chicken 65</p>
+                                    <p>200 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu12.jpg" style="height: 200px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Chicken Lollipop</p>
+                                    <p>250 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu13.webp" style="height: 200px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Chicken pizza</p>
+                                    <p>200 Rs</p>
+                                </div>
+                            </div>
+                            <div class="itemcard">
+                                <img src="Images/foodmenu14.jpg" style="height: 250px;width: 220px;">
+                                <div class="nameprice">
+                                    <p>Lasagna</p>
+                                    <p>210 Rs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="booktable">
+            <div class="booktableslide">
+                <div class="booktable">
+                    <h2>Book your table</h2><br><br>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name"><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email"><br><br>
+                    <label for="date">Date</label><br>
+                    <input type="date" id="date"><br><br>
+                    <label for="time">Time</label><br>
+                    <input type="time" id="time"><br><br><br>
+                    <button>BOOK NOW</button>
+    
+                </div>
+                
+            </div>
+        </div>
+        <div id="profilesignup">
+            <div class="profileslide">
+                <div class="profilesignup">
+                    <h2>Sign Up</h2><br><br>
+                    <label for="name">Enter Name</label><br>
+                    <input type="text" id="name"><br><br>
+                    <label for="email">Enter Email</label><br>
+                    <input type="email" id="email"><br><br>
+                    <label for="createpassword">Create Password</label><br>
+                    <input type="password" id="createpassword"><br><br>
+                    <label for="confirmpassword">Confirm password</label><br>
+                    <input type="password" id="confirmpassword"><br><br><br>
+                    <button>Sign Up</button><br><br>
+                    <p>Already have an account ? <a href="#signin" onclick="signin()">Sign In</a></p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="profilesignin">
+            <div class="profileslide">
+                <div class="profilesignin">
+                    <h2>Sign In</h2><br><br>
+                    <label for="name">Enter Name</label><br>
+                    <input type="text" id="name"><br><br>
+                    <label for="email">Enter Email</label><br>
+                    <input type="email" id="email"><br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password"><br><br>
+                    <button>Sign In</button><br><br>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
